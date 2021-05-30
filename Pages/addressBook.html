@@ -28,5 +28,59 @@
                 </div>
             </div>
         </div>
+        <!--UC3 adding input fields-->
+        <div class="formDetail">
+            <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+                <div class="row-content">   <!--for name-->
+                    <label class="label-text" for="name">Full Name</label>
+                    <input class="input" type="text" id="name" name="name" required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="row-content">   <!--Phone number-->
+                    <label class="label-text" for="phone">Phone Number</label>
+                    <input class="input" type="text" id="phone" name="phone" required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="row-content">   <!--Address-->
+                    <label class="label-text" for="address">Address</label>
+                    <input class="input-address" type="text" id="address" name="address"  required>
+                </div>
+                <div class="row-content-select">    <!--City-->
+                    <div class="place">
+                        <label class="label-text" for="city">City</label>
+                        <select class="select" id="city" name="city">
+                            <option value="" selected disabled hidden>Select City</option>
+                            <option value="1">Prayagrajl</option>
+                            <option value="2">Tezpur</option>
+                            <option value="3">Jammu</option>
+                            <option value="4">Pune</option>
+                            <option value="5">Jaipur</option>
+                            <option value="6">Bangalore</option>
+                            <option value="7">Vadodra</option>
+                            <option value="8">Kolkata</option>
+                        </select>
+                    </div>
+                    <div class="place"> <!--State-->
+                        <label class="label-text" for="state">State</label>
+                        <select class="select" id="state" name="state">
+                            <option value="" selected disabled hidden>Select State</option>
+                            <option value="1">Uttar Pradesh</option>
+                            <option value="2">Assam</option>
+                            <option value="3">Jammu and Kashmir</option>
+                            <option value="4">Maharashtra</option>
+                            <option value="5">Karnataka</option>
+                            <option value="6">Gujrat</option>
+                            <option value="7">West Bengal</option>
+                            <option value="8">Rajasthan</option>
+                        </select>
+                    </div>
+                    <div class="place">
+                        <label class="label-text" for="zip">Zip-Code</label>
+                        <input class="input" type="text" id="zip" name="zip" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
     </body>
 </html> 
