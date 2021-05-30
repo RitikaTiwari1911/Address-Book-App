@@ -178,3 +178,8 @@ select{
     color: #42515f;
     background-color: transparent ;
 }
+error-output{
+    font-size: 15px;
+    font-style: italic;
+    color: red;
+}

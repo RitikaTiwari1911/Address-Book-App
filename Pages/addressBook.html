@@ -39,11 +39,12 @@
                 <div class="row-content">   <!--Phone number-->
                     <label class="label-text" for="phone">Phone Number</label>
                     <input class="input" type="text" id="phone" name="phone" required>
-                    <error-output class="text-error" for="text"></error-output>
+                    <error-output class="phone-error" for="text"></error-output>
                 </div>
                 <div class="row-content">   <!--Address-->
                     <label class="label-text" for="address">Address</label>
                     <input class="input-address" type="text" id="address" name="address"  required>
+                    <error-output class="address-error" for="text"></error-output>
                 </div>
                 <div class="row-content-select">    <!--City-->
                     <div class="place">
@@ -74,13 +75,16 @@
                             <option value="8">Rajasthan</option>
                         </select>
                     </div>
-                    <div class="place">
+                    <div class="place"> <!--Zip Code-->
                         <label class="label-text" for="zip">Zip-Code</label>
                         <input class="input" type="text" id="zip" name="zip" placeholder="" required>
+                        <error-output class="zip-error" for="text"></error-output>
                     </div>
                 </div>
             </div>
         </form>
         </div>
+        <script defer src = "../js/AddressBook.js"></script>
+        <script defer src = "../js/Validation.js"></script>
     </body>
 </html> 
