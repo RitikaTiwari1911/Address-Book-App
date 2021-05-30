@@ -30,7 +30,7 @@ class AddressBookData{
     }
     set address(address){
         //regex for address
-        let addressRegex = RegExp('[A-Z]{1}[a-z]{2,}');
+        let addressRegex = RegExp('[A-Za-z0-9]{1}[A-Za-z0-9]{5,}');
         if( addressRegex.test(address)){
             this._address=address;
         }
