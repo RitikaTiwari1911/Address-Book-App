@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 
     const address = document.querySelector('#address');
-    const addressError = document.querySelector('.address-error');
+    const addressError = document.querySelector('.add-error');
     address.addEventListener('input', function () {
         if (address.value.length == 0) {
             adddressError.textContent = "";
@@ -81,13 +81,13 @@ const createAddressBook = () => {
     addressBookData.phone = getInputValuesById('#phone');
     addressBookData.address = getInputValuesById('#address');
     addressBookData.city = getInputValuesById('#city');
-    addressBookData.state = getInputValuesById('#name=state');
+    addressBookData.state = getInputValuesById('#state');
     addressBookData.zip = getInputValuesById('#zip');
     alert(addressBookData.toString());
     return addressBookData;
 }
 
-// UC8 
+// UC-8
 function createAndUpdateStorage(addressBookData){
     let addressBookList = JSON.parse(localStorage.getItem("AddressBookList"));
     if(addressBookList != undefined){
@@ -105,7 +105,7 @@ const getInputValuesById = (id) => {
     return value;
 }
 
-//UC9 Cancel Event
+//UC9 reset form
 const resetForm = () => {
     setValue('#name','');
     setValue('#phone','');
