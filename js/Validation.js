@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-// UC6 Defining Address Book contact JSON Object to capture the User Entry
+// UC-6
 const save = () => {
     try{
         let addressBookData = createAddressBook();
@@ -70,6 +70,7 @@ const save = () => {
     }
 }
 
+//UC-6
 const createAddressBook = () => {
     let addressBookData = new AddressBookData();
     try{
@@ -78,6 +79,7 @@ const createAddressBook = () => {
         setTextValue('.test-error', e);
         throw e;
     }
+    addressBookData.id = Math.floor((Math.random() * 100000) + 1);
     addressBookData.phone = getInputValuesById('#phone');
     addressBookData.address = getInputValuesById('#address');
     addressBookData.city = getInputValuesById('#city');
@@ -105,7 +107,7 @@ const getInputValuesById = (id) => {
     return value;
 }
 
-//UC9 reset form
+//UC-9
 const resetForm = () => {
     setValue('#name','');
     setValue('#phone','');
