@@ -50,3 +50,10 @@ const remove = (node)=> {
     createInnerHTML();
 }
 
+//update person details 
+const update = (node) => {
+    let addressBookData = addressBookList.find(personData=>personData._id == node.id);
+    if (!addressBookData) return;
+    localStorage.setItem('editPerson',JSON.stringify(addressBookData));
+    window.location.replace(site_properties.add_person_page);    
+}
